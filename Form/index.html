@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.min.css" >
+</head>
+<body>
+
+    <form>
+        <h1>Create New Customer Account</h1>
+        <h2>Personal Information</h2>
+        <input class="any_text" required type="text" placeholder="First Name *">
+        <input class="any_text" required type="text" placeholder="Last Name">
+        <input type="checkbox" id="check1">
+        <label for="check1">Sing Up for Newsletter</label>
+        
+       
+        
+        <input class="email" required type="email" placeholder="Email">
+        <input class="password" required type="password" placeholder="Password">
+
+        <div style="display: none;" class="form_alert" >
+        <span>Passwords must be at least 8 characters long and contain 1 number and 1 letter</span>
+        </div>
+
+        <input class="password_confirm" required type="password" placeholder="Confirm Password">
+
+
+        <h2>Address Information</h2>
+        <div class="code_phone">
+            <div class="div_code" >
+                <span class="span_code">Country Code<span class="star">*</span> </span>
+
+                <select></select>
+            </div>
+            <div class="div_phone"> 
+                <span class="span_phone">Phone Number<span class="star">*</span></span>
+                <input class="phone" required type="tel" placeholder="">
+            </div>
+        </div>
+        <input class="address" maxlength="30" required type="text" placeholder="Street Address">
+     
+        <select class="choose_country"></select> 
+        <select class="choose_city"></select>
+
+        <input class="zip_code" type="text" placeholder="Zip/Postal Code">
+
+        <p  class="required"><span class="star">*</span>Required Fields</p>
+
+        <button class="button" >Create an account</button>
+
+        
+
+
+    </form>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>   
+<script src="js/script.js"></script>
+
+</body>
+</html>

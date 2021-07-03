@@ -1,0 +1,160 @@
+
+form{ 
+    border: 1px solid #000;
+    width: 1200px;
+    margin: auto;
+
+    h1{
+        margin: auto;
+        width: 40%;
+        padding-bottom: 30px;
+    }
+    h2{
+        border-bottom: 1px solid #bdb9b9;
+        padding: 10px 0 10px;
+        margin-bottom: 20px;
+    }
+
+
+
+ 
+    //обращение к input которые являются полями с текстом -  [type="text"]
+    input{  
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        height: 40px;
+        margin-top: 20px;
+        color:#000;
+        padding: 20px;
+        border: 1px solid rgb(228, 224, 224); 
+        outline: none;
+        font-size: 13px;
+       
+        &::placeholder{
+            color: #000;
+            font-size: 13px;
+            border-color: rgb(204, 200, 200);
+            padding-bottom: 5px;
+        }
+    }
+    input[type=email]{
+        margin-top: 0;
+    }
+
+    input[type=checkbox]{
+        display: inline-block;
+       position: relative;
+        width: auto;
+        height: 25px;
+        width: 25px;
+        margin-top: 10px;
+    }
+
+    label{
+        display: inline-block;
+       position: relative;
+       vertical-align: middle;
+       padding-bottom: 20px;
+       font-size: 14px;
+    }
+    .form_alert{
+        padding-left: 20px;
+        background: rgb(228, 224, 224); 
+        height: 20px;
+        padding: 10px;
+    }
+  
+    .code_phone{
+
+        display: flex;
+        justify-content: space-between;
+        .div_code{
+            font-size: 12px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgb(228, 224, 224); 
+            width: 30%;
+            padding-top: 10px;
+            .span_code{
+                padding-left:20px;
+
+            }
+        
+            select{
+                padding: 10px 0 20px 20px;
+                border: none;
+                outline: none;
+
+            }
+        }
+    }
+    
+    .div_phone{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgb(228, 224, 224); 
+        width: 60%;
+        font-size: 12px;
+        font-weight: bold;
+        padding-top: 10px;
+        .span_phone{
+            padding-left:20px;
+            
+        }
+
+        input{
+            margin-top: 0;
+        }
+
+    }
+    .choose_country{
+        width: 100%;
+        margin-top: 20px;
+        border: 1px solid rgb(228, 224, 224); 
+        height: 40px;
+    }
+    .choose_city{
+    padding-left: 20px;
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid rgb(228, 224, 224); 
+    height: 40px;
+    }
+
+   button{
+       width: 250px;
+       height: 50px;
+       color: #ffffff;
+       background: #000;
+       border: none;
+       border-radius: 6px;
+       text-transform: uppercase;
+       font-size: 14px;
+   }
+
+
+
+    .required_p{
+        color: #ff0000;
+    }
+
+    .valid{
+        border: 1px solid green;
+    }
+    .error{
+        border: 1px solid red;
+    }
+    .star{
+        color: #ff0000;
+    }
+
+}
+
+
+    
+
+
+
+
